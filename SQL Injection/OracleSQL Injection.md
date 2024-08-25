@@ -40,6 +40,7 @@ SELECT user FROM dual UNION SELECT * FROM v$version
 SELECT banner FROM v$version WHERE banner LIKE 'Oracle%';
 SELECT banner FROM v$version WHERE banner LIKE 'TNS%';
 SELECT version FROM v$instance;
+SELECT BANNER, NULL FROM v$version
 ```
 
 
